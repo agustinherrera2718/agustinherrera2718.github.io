@@ -29,8 +29,8 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    font-family: fuentemuna;
-    font-weight: 800;
+   
+    
 }
 
 .loader-circle {
@@ -193,13 +193,13 @@
                         <label for="txt_nombre" class="form-label">Nombre y Apellido * :</label>
                         <input type="text" id="txt_nombre" class="form-control form-control-sm"  placeholder="Ingrese Nombre" required="required"/>
               </div>
-            <div class="mb-3">
-                        <label for="txt_telefono" class="form-label">Telefono * :</label>
-                        <input type="text" id="txt_telefono" class="form-control form-control-sm"  placeholder="Ingrese Telefono" required="required"/>
+              <div class="mb-3">
+                        <label for="txt_telefono" class="form-label">Telefono  :</label>
+                        <input type="text" id="txt_telefono" class="form-control form-control-sm"  placeholder="Ingrese Telefono"/>
                       </div>
            <div class="mb-3">
-                        <label for="txt_direccion" class="form-label">Direccion * :</label>
-                        <input type="text" id="txt_direccion" class="form-control form-control-sm" placeholder="Ingrese Direccion" required="required"/>
+                        <label for="txt_direccion" class="form-label">Direccion  :</label>
+                        <input type="text" id="txt_direccion" class="form-control form-control-sm" placeholder="Ingrese Direccion"/>
              </div>
         </div>
         <div class="col-6 small" >
@@ -208,8 +208,8 @@
              	<input type="text" id="txt_rut" class="form-control form-control-sm"  placeholder="Ingrese Documento" required="required"/>
             </div>              
             <div class="mb-3">
-             	<label for="txt_correo" class="form-label">E-MAIL * :</label>
-             	<input type="email" id="txt_correo" class="form-control form-control-sm"  placeholder="Ingrese Correo" required="required"/>
+             	<label for="txt_correo" class="form-label">E-MAIL  :</label>
+             	<input type="email" id="txt_correo" class="form-control form-control-sm"  placeholder="Ingrese Correo"/>
             </div> 
               <div class="mb-3">
              	<label for="txt_agencia" class="form-label">Entrega * :</label>
@@ -269,11 +269,11 @@
 
     }
     .modal_pedido, .list-group-item{
-      background-color: #b2c2b2;
+      background-color: #b5c7b7;
 
     } 
     .accordion-button, .collapsed{
-      background-color: #d4a494;
+      background-color: #d1a193;
       color: white;
 
     }
@@ -328,9 +328,10 @@ font-family: 'Poppins', sans-serif;
       font-style: italic;
       cursor: pointer;
 
+
     }
     .plato_monto{
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 700;
       padding: 8px 8px;
       margin: 0;
@@ -379,8 +380,9 @@ font-family: 'Poppins', sans-serif;
       font-size: 35px;
      font-family: fuentemuna;
      letter-spacing: .2rem;
-     background-color: #b2c2b2;
-     font-weight: 1000;
+     background-color: #b5c7b7;
+     font-weight: 900;
+
 
 
     }
@@ -397,12 +399,12 @@ font-family: 'Poppins', sans-serif;
 
     .margen_0{
       padding: .5rem 0rem !important;
-      background-color: #b2c2b2;
+      background-color: #b5c7b7;
     }
 
     .container-sm{
       max-width: 600px !important;
-      background-color: #b2c2b2;
+      background-color: #b5c7b7;
     }
     /* Contecnido del detalle de producto */
     .detalle_titulo{
@@ -444,10 +446,10 @@ font-family: 'Poppins', sans-serif;
 
 
     body {
-  	background-color: #b2c2b2;
-	}
-	#navbarfooter {
-  	background-color:  #d4a494;
+  	background-color: #b5c7b7	}
+	
+  #navbarfooter {
+  	background-color:  #d1a193;
 	}
 	#accordionFlushExample {
 	  	margin-bottom:70px !important;
@@ -1015,11 +1017,11 @@ font-family: 'Poppins', sans-serif;
 	                 lstProductos+='     <li class="list-group-item d-flex justify-content-between align-items-center"  id="detalle_item_'+lst_producto[i].producto[j].codigo+'">';
 	                 lstProductos+='     <div>';
 	                 lstProductos+='    <div  onclick="mostrar_popuppedido(\''+lst_producto[i].codigo+'\',\''+lst_producto[i].producto[j].codigo+'\');"> <span class="plato_nombre">'+lst_producto[i].producto[j].nombre+'</span> ';
-	                 lstProductos+='     <span class="plato_descripcion">'+lst_producto[i].producto[j].descripcion+'</span> ';
+	                 lstProductos+='     <span class="plato_descripcion"> '+lst_producto[i].producto[j].descripcion+' </span>';
 	                   
-                     lstProductos+='<span class="plato_anadir"><i class="bi bi-cart-plus-fill"></i> AÑADIR </div> ';
+                     lstProductos+='<span class="plato_anadir"><i class="bi bi-cart-plus-fill"></i> AÑADIR </div>';
 
-                     lstProductos+=' <span class="plato_monto"> '+lst_producto[i].producto[j].variedad[0].moneda+""+lst_producto[i].producto[j].variedad[0].precio+'</span> ';
+                     lstProductos+=' <span class="plato_monto">'+lst_producto[i].producto[j].variedad[0].moneda+""+lst_producto[i].producto[j].variedad[0].precio+'</span>';
                     
                     
                    
