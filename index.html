@@ -34,7 +34,7 @@
 .loader-wrapper {
     position: fixed;
     z-index: 9999;
-    background: #b8c4b4;
+    background: #FAFAFA;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -256,20 +256,21 @@
    <!-- END MODEL PAGE -->    
             
 <style>
-
+  @font-face{
+    font-family: fuentedescripcion;
+    src: url("MonticelloFraction-Regular.ttf");
+  }
+  
   @font-face{
     font-family: fuentemuna;
     src: url("Micolesther-Regular.ttf");}
-
-    .whatsapp-floating-button {
-	    position: fixed;
-	    right: 20px;
-	    bottom: 100px;
-	    z-index: 100;
-	}
+}
+@font-face{
+    font-family: fuentedescripcion2;
+    src: url("monterchi-book.otf");
+  }
     .accordion-button:not(.collapsed){
-      color: #333333;
-      background-color: #d4a494;
+      background-color: #b4c4bc;
 
 
     }
@@ -278,33 +279,44 @@
 
     }
     .modal_pedido, .list-group-item{
-      background-color: #b5c7b7;
+      background-color: #FAFAFA
 
     } 
     .accordion-button, .collapsed{
-      background-color: #d1a193;
-      color: white;
+      background-color: #b4c4bc;
+      color: #FAFAFA;
 
     }
     .accordion-button:focus{
       z-index: 4; 
-      border-color: #d4a494 !important;
+      border-color: #b4c4bc!important;
       outline: 0; 
-      box-shadow: 0 0 0 0.25rem #b2c2b2;
+      box-shadow: 0 0 0 0.25rem #FAFAFA;
 
     } 
     .accordion-button:not(.collapsed)::after{
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     }
+
+    
+    
+    }
     .image-parent {
-      max-width: 145px;
-      margin-left: 8px;
-      /*max-height: 90px;*/
+        max-width: 140px; /* ajusta el valor según tus necesidades */
+  max-height: 140px; /* ajusta el valor según tus necesidades */
+  width: auto;
+  height: auto;
+  margin: 3px;
+  border: 1xp solid black ;
+
+
+
       
-      border:1px solid white;
+      
 
     }
     .categoria_nombre {
+      background-color: #b8c4bc;
     font-size: 17px;
     font-weight: 700;
     text-align: left;
@@ -315,12 +327,12 @@ font-family: 'Poppins', sans-serif;
 
     }
     .plato_nombre {
-    font-size: 16px;
+    font-size: 12px;
+    margin: 5px;
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
+    font-family: fuentedescripcion2;
 cursor: pointer;
-color: #2F2F2F; 
+color: #2A2A2A; 
 font-weight: 700;
 
 
@@ -332,13 +344,13 @@ font-weight: 700;
       display: -webkit-box;
       -webkit-line-clamp: 5;
       line-height: 20px;
-      font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 14px;
-      font-style: italic;
+      font-family: fuentedescripcion2;
+      
+      font-size: 11px;
+      
       cursor: pointer;
       margin: 5px;
+      font-weight: 200;
  
 
 
@@ -349,18 +361,19 @@ font-family: 'Poppins', sans-serif;
       padding: 8px 8px;
       margin: 0;
       color: #2F2F2F; 
-      display: inline-block;
+      display: flex;
       cursor: pointer;
-      font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-}
+      font-family: fuentedescripcion;
+
+      }
+
 
 .plato_anadir{
-  background-color: #56a847;
+  background-color: #d1a193;
   border-radius: .4rem;
-  font-size: 12px;
+  font-size: 10.5px;
       font-weight: 700;
-      padding: 3px 3px;
+      padding: 1.5px 1.5px;
       margin: 5px;
       color: #F6F8FC; 
       display: inline-block;
@@ -376,7 +389,7 @@ font-family: 'Poppins', sans-serif;
 
     }
     .plato_boton{
-      color:white;
+      color:#FAFAFA;
       display:block;
       max-width: 80px;
 
@@ -393,7 +406,7 @@ font-family: 'Poppins', sans-serif;
       font-size: 35px;
      font-family: fuentemuna;
      letter-spacing: .2rem;
-     background-color: #b5c7b7;
+     background-color: #FAFAFA;
      font-weight: 900;
 
 
@@ -402,7 +415,7 @@ font-family: 'Poppins', sans-serif;
     .pagina_descripcion {
       align-items: flex-start;
       line-height: 25px;
-      display: flex;
+      display: inline-block;
       margin-top: 0;
       flex-direction: column;
       justify-content: center;
@@ -412,16 +425,16 @@ font-family: 'Poppins', sans-serif;
 
     .margen_0{
       padding: .5rem 0rem !important;
-      background-color: #b5c7b7;
+      background-color: #FAFAFA;
     }
 
     .container-sm{
       max-width: 600px !important;
-      background-color: #b5c7b7;
+      background-color: #FAFAFA;
     }
     /* Contecnido del detalle de producto */
     .detalle_titulo{
-      background-color: #d4a494;
+      background-color: #b8c4bc;
       font-size: 14px;
       font-weight: 500;
       padding: 5px 0;
@@ -454,17 +467,20 @@ font-family: 'Poppins', sans-serif;
     }
     
     .bi-cart-plus-fill{
-      color: white;
+      color: #FAFAFA;
     }
 
 
     body {
-  	background-color: #b5c7b7	}
+  	background-color: #FAFAFA	}
+	
+    
 	
   #navbarfooter {
-  	background-color:  #d1a193;
+  	background-color: #b8c4bc;
 	}
 	#accordionFlushExample {
+
 	  	margin-bottom:70px !important;
 
 
@@ -1023,18 +1039,27 @@ font-family: 'Poppins', sans-serif;
 	             lstProductos+='   </h2>';
 	             lstProductos+='   <div id="flush-collapse-'+lst_producto[i].codigo+'" class="accordion-collapse collapse show" aria-labelledby="flush-heading-'+lst_producto[i].codigo+'" data-bs-parent="#accordionFlushExample">';
 	             lstProductos+='     <div class="accordion-body">';
-	             lstProductos+='     <ol class="list-group">';
+	             lstProductos+='     <ol class="list-group">';/*AQ*/
+
+                lstProductos+='     <div class="form-group row" style="--bs-gutter-x:0 !important;background-color: #b5c7b7 !important;">';/*AQ*/
+
+                
 	             if(lst_producto[i].producto!=null && lst_producto[i].producto.length>0){
 	               for (var j = 0; j < lst_producto[i].producto.length ; j++) {
 	                
-	                 lstProductos+='     <li class="list-group-item d-flex justify-content-between align-items-center"  id="detalle_item_'+lst_producto[i].producto[j].codigo+'">';
+//                  lstProductos+='<div class="col-sm-6 col-12 mb-0">';  
+
+                    lstProductos+='<div class="col-6 mb-0">';  
+                    
+	                 lstProductos+='     <li class="list-group-item d-flex justify-content-between align-items-center" style="height: calc(100% - 2px) !important;" id="detalle_item_'+lst_producto[i].producto[j].codigo+'">';
 	                 lstProductos+='     <div>';
-	                 lstProductos+='    <div  onclick="mostrar_popuppedido(\''+lst_producto[i].codigo+'\',\''+lst_producto[i].producto[j].codigo+'\');"> <span class="plato_nombre">'+lst_producto[i].producto[j].nombre+'</span> ';
-	                 lstProductos+='     <span class="plato_descripcion"> '+lst_producto[i].producto[j].descripcion+' </span>';
+                   lstProductos+='   <div>';
+                  lstProductos+='    <div  onclick="mostrar_popuppedido(\''+lst_producto[i].codigo+'\',\''+lst_producto[i].producto[j].codigo+'\');"> <span class="plato_nombre">'+lst_producto[i].producto[j].nombre+'</span> ';
+	                 lstProductos+='     <span class="plato_descripcion"> '+lst_producto[i].producto[j].descripcion+'</span>';
 	                   
                      lstProductos+='<span class="plato_anadir"><i class="bi bi-cart-plus-fill"></i> AÑADIR </div>';
-
-                     lstProductos+=' <span class="plato_monto">'+lst_producto[i].producto[j].variedad[0].moneda+""+lst_producto[i].producto[j].variedad[0].precio+'</span>';
+                    var num =parseFloat(lst_producto[i].producto[j].variedad[0].precio);
+                     lstProductos+=' <span class="plato_monto">'+lst_producto[i].producto[j].variedad[0].moneda+""+num.toLocaleString("es-AR")+'</span>';
                     
                     
                    
@@ -1044,15 +1069,20 @@ font-family: 'Poppins', sans-serif;
 
 	                 lstProductos+='<div id="detalle_cantidad_'+lst_producto[i].producto[j].codigo+'"></div>'; 
 	                 lstProductos+='     </div>';
-	                 lstProductos+='     <div class="image-parent">';
+	                 lstProductos+='    <div class="image-parent">';
 	                 lstProductos+=' <a href="'+lst_producto[i].producto[j].imagen+'" data-fancybox data-caption="'+lst_producto[i].producto[j].nombre+'">';
-	                 lstProductos+='     <img src="'+lst_producto[i].producto[j].imagen+'" class="img-fluid" alt="quixote">';
+	                 lstProductos+='    <img src="'+lst_producto[i].producto[j].imagen+'" class="img-fluid" alt="quixote">';
 	                 lstProductos+='     </a>';
 	                 lstProductos+='     </div>';
 	                 lstProductos+='     </li>';
-	               }
+
+                   lstProductos+='</div>';  
+
+                  }
 	             }    
-	             lstProductos+='     </ol>';
+	             lstProductos+='     </div>';
+
+               lstProductos+='     </ol>';
 	             lstProductos+='     </div>';
 	             lstProductos+='   </div>';
 	             lstProductos+=' </div>';
