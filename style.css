@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Monticello';
-    src: local('Monticello Fraction Regular'), local('Monticello-Fraction-Regular'),
-        url('MonticelloFraction-Regular.woff2') format('woff2'),
-        url('MonticelloFraction-Regular.woff') format('woff'),
-        url('MonticelloFraction-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
