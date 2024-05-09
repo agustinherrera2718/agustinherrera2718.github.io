@@ -19,7 +19,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">	
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JL6RRJJWE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -264,7 +269,7 @@
   @font-face{
     font-family: fuentemuna;
     src: url("Micolesther-Regular.ttf");}
-}
+
 @font-face{
     font-family: fuentedescripcion2;
     src: url("monterchi-book.otf");
@@ -300,7 +305,7 @@
 
     
     
-    }
+    
     .image-parent {
         max-width: 140px; /* ajusta el valor según tus necesidades */
   max-height: 140px; /* ajusta el valor según tus necesidades */
@@ -308,32 +313,39 @@
   height: auto;
   margin: 3px;
   border: 1xp solid black ;
+  
 
 
 
-      
+ 
+  
       
 
     }
     .categoria_nombre {
       background-color: #b8c4bc;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     text-align: left;
     display: block;
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal
     }
     .plato_nombre {
     font-size: 12px;
     margin: 5px;
-    display: inline-block;
-    font-family: fuentedescripcion2;
+   display: inline-block;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal; 
 cursor: pointer;
 color: #2A2A2A; 
 font-weight: 700;
+display: -webkit-box;
+
 
 
     }
@@ -344,13 +356,14 @@ font-weight: 700;
       display: -webkit-box;
       -webkit-line-clamp: 5;
       line-height: 20px;
-      font-family: fuentedescripcion2;
-      
-      font-size: 11px;
-      
-      cursor: pointer;
-      margin: 5px;
-      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal; 
+ margin:5px;
+ font-size: 12px;
+ cursor: pointer;
+ font-weight: 500;
  
 
 
@@ -363,23 +376,30 @@ font-weight: 700;
       color: #2F2F2F; 
       display: flex;
       cursor: pointer;
-      font-family: fuentedescripcion;
+      font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: -webkit-box;
 
       }
 
 
 .plato_anadir{
-  background-color: #d1a193;
-  border-radius: .4rem;
+  background-color: #0A8406;
+  border-radius: .2rem;
   font-size: 10.5px;
-      font-weight: 700;
-      padding: 1.5px 1.5px;
+      font-weight: 600;
+      padding: 3.5px 3.5px;
       margin: 5px;
+      margin-top: 15px;
+      margin-bottom: 8px;
       color: #F6F8FC; 
       display: inline-block;
       cursor: pointer;
-       font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
+      font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
 }
 
 .plato_anadir:hover{
@@ -387,11 +407,12 @@ font-family: 'Poppins', sans-serif;
 }
       
 
-    }
+    
     .plato_boton{
       color:#FAFAFA;
       display:block;
       max-width: 80px;
+      
 
 
     }
@@ -403,11 +424,11 @@ font-family: 'Poppins', sans-serif;
       margin-top: 0;
       flex-direction: column;
       justify-content: center;
-      font-size: 35px;
-     font-family: fuentemuna;
-     letter-spacing: .2rem;
+      font-size: 40px;
+      letter-spacing: .2rem;
      background-color: #FAFAFA;
      font-weight: 900;
+     font-family: fuentedescripcion2;
 
 
 
@@ -429,7 +450,7 @@ font-family: 'Poppins', sans-serif;
     }
 
     .container-sm{
-      max-width: 600px !important;
+      max-width: 650px !important;
       background-color: #FAFAFA;
     }
     /* Contecnido del detalle de producto */
